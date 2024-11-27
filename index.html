@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+    const translateButton = document.getElementById("translate-button");
+
+    let isEnglish = true;
+
+    translateButton.addEventListener("click", () => {
+       
+        isEnglish = !isEnglish;
+
+     
+        translateButton.textContent = isEnglish ? "PT-BR" : "ENG";
+
+        
+        document.querySelectorAll(".translatable").forEach((element) => {
+            const translationKey = isEnglish ? "data-en" : "data-pt";
+            element.textContent = element.getAttribute(translationKey);
+        });
+    });
+});
+
+
+</script>
+<body>
+    <main class="cv-container">
+        <div class="container"><button id="translate-button" class="button">PT-BR</button></div>
+        <header>
+            <h1 class="translatable" data-en="Julia Reis" data-pt="Julia Reis">Julia Reis</h1>
+            <h2 class="translatable" data-en="Web Developer" data-pt="Desenvolvedora Web">Web Developer</h2>
+            <address>
+                
+                <section class="redes-sociais">
+                    <a class="box-social tiktok" href="https://www.tiktok.com/@julia64bit" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a class="box-social instagram" href="https://www.instagram.com/juli64bit/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="box-social github" href="https://github.com/juli32bit" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a class="box-social linkedin" href="https://www.linkedin.com/in/juli32bit" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </section>
+
+                <span class="translatable" data-en="Brasilia, Brazil" data-pt="Brasília, Brasil">Brasilia, Brazil</span><br>
+                <span class="translatable" data-en="(61)981206088" data-pt="(61)981206088">(61)981206088</span><br>
+                <a href="mailto:juliamesquita267@gmail.com" target="_blank" class="translatable" data-en="juliamesquita267@gmail.com" data-pt="juliamesquita267@gmail.com">juliamesquita267@gmail.com</a>
+            </address>
+        </header>
+
+        <section class="aboutme">
+            <h3 class="translatable" data-en="About me" data-pt="Sobre mim">About me</h3>
+            <p class="translatable" 
+                data-en="Brazilian Developer passionate about creating innovative, creative, and user-centered web solutions. Currently seeking an internship opportunity to apply web development skills to real and functional projects. Fast learner and explorer of modern frameworks, different programming languages, and approaches such as design thinking, always with a focus on security and quality. My ability to adapt quickly and my eagerness to grow professionally motivate me to contribute with creative and impactful solutions to any work environment"
+                data-pt="Desenvolvedora brasileira apaixonada por criar soluções web inovadoras, criativas e centradas no usuário. Atualmente em busca de uma oportunidade de estágio para aplicar habilidades de desenvolvimento web a projetos reais e funcionais. Aprendizado rápido e exploradora de frameworks modernos, diferentes linguagens de programação e abordagens como design thinking, sempre com foco em segurança e qualidade. Minha capacidade de adaptação rápida e meu desejo de crescer profissionalmente me motivam a contribuir com soluções criativas e impactantes em qualquer ambiente de trabalho.">
+                Brazilian Developer passionate about creating innovative, creative, and user-centered web solutions. Currently seeking an internship opportunity to apply web development skills to real and functional projects. Fast learner and explorer of modern frameworks, different programming languages, and approaches such as design thinking, always with a focus on security and quality. My ability to adapt quickly and my eagerness to grow professionally motivate me to contribute with creative and impactful solutions to any work environment.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h3 class="translatable" data-en="Skills" data-pt="Habilidades">Skills</h3>
+            <p class="translatable" 
+                data-en="Semantic HTML, JavaScript, SEO, React, Git and Github for version control. Responsive web design focusing on responsiveness and user satisfaction through design. MySQL, Proficient English - writing, listening and talking. Basic Spanish Knowledge. Knowledge of computer hardware maintenance for desktops, all-in-ones and notebooks. Engaged with cybersecurity, still completing the Google Cybersecurity course in Coursera."
+                data-pt="HTML semântico, JavaScript, SEO, React, Git e Github para controle de versão. Design de sites com foco em responsividade e satisfação do usuário através do design. MySQL, inglês fluente - escrita, compreensão auditiva e conversação. Conhecimentos básicos de espanhol. Conhecimento em manutenção de hardware de computadores para desktops, all-in-ones e notebooks. Engajado em cibersegurança, ainda cursando o curso de Cibersegurança do Google na Coursera.">
+                Semantic HTML, JavaScript, SEO, React, Git and Github for version control. Responsive web design focusing on responsiveness and user satisfaction through design. MySQL, Proficient English - writing, listening and talking. Basic Spanish Knowledge. Knowledge of computer hardware maintenance for desktops, all-in-ones and notebooks. Engaged with cybersecurity, still completing the Google Cybersecurity course in Coursera.
+            </p>
+        </section>
+
+        <section class="education">
+            <h3 class="translatable" data-en="Education" data-pt="Educação">Education</h3>
+            <article>
+                <h4 class="translatable" data-en="UNICEUB, Brasilia, Brazil" data-pt="UNICEUB, Brasília, Brasil">UNICEUB, Brasilia, Brazil</h4>
+                <p class="translatable" data-en="System Analysis and Development February 2024 to Month 2026(Ongoing)" data-pt="Análise e Desenvolvimento de Sistemas Fevereiro de 2024 até Julho de 2026(Ainda cursando)">
+                    <strong class="translatable" data-en="System Analysis and Development" data-pt="Análise e Desenvolvimento de Sistemas">System Analysis and Development</strong><br>
+                    February 2024 to July 2026 <strong class="translatable" data-en="(Ongoing)" data-pt="(Ainda cursando)"> (Ongoing)</strong>
+                </p>
+                <ul>
+                    <li class="translatable" data-en="Engaged in helping elders with computers every Saturday" data-pt="Engajada em ajudar idosos com computadores todo sábado">Engaged in helping elders with computers every Saturday</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="soft-skills">
+            <article>
+                <h3 class="translatable" data-en="Soft Skills" data-pt="Habilidades interpessoais">Soft Skills</h3>
+                <ul>
+                    <li class="translatable" data-en="Critical Thinking" data-pt="Pensamento Crítico">Critical Thinking</li>
+                    <li class="translatable" data-en="Team collaboration and group problem-solving" data-pt="Colaboração em equipe e resolução de problemas em grupo">Team collaboration and group problem-solving</li>
+                    <li class="translatable" data-en="Empathy and clear communication" data-pt="Empatia e comunicação clara">Empathy and clear communication</li>
+                    <li class="translatable" data-en="Emotional intelligence" data-pt="Inteligência emocional">Emotional intelligence</li>
+                    <li class="translatable" data-en="Proactivity and adaptability" data-pt="Proatividade e adaptabilidade">Proactivity and adaptability</li>
+                    <li class="translatable" data-en="Creativity and time management" data-pt="Criatividade e gestão de tempo">Creativity and time management</li>
+                    <li class="translatable" data-en="Strong reading habits" data-pt="Hábitos fortes de leitura">Strong reading habits</li>
+                    <li class="translatable" data-en="Problem-solving mindset" data-pt="Mentalidade de resolução de problemas">Problem-solving mindset</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="experience">
+            <h3 class="translatable" data-en="Experience" data-pt="Experiência">Experience</h3>
+            <article>
+                <ul>
+                    <li class="translatable" 
+                    data-en="Introduction to Computing for Seniors: Acted as a monitor and teacher at UniCEUB every Saturday. From September 2024 to November 2024" 
+                    data-pt="Introdução à Computação para Idosos: Atuou como monitora e professora na UniCEUB todo sábado. De setembro de 2024 a novembro de 2024">
+                    Introduction to Computing for Seniors: Acted as a monitor and teacher at UniCEUB every Saturday. <strong>From September 2024 to November 2024</strong>
+                </li>
+                <li class="translatable" 
+                    data-en="Local and Residential Network Configuration: Assisted in setting up and troubleshooting networks." 
+                    data-pt="Configuração de Rede Local e Residencial: Auxiliou na configuração e solução de problemas de redes. (Em andamento)">
+                    Local and Residential Network Configuration: Assisted in setting up and troubleshooting networks. <strong>(Ongoing)</strong>
+                </li>
+                <li class="translatable" 
+                    data-en="Hardware Support: Provided technical support for desktops, notebooks. (Ongoing)" 
+                    data-pt="Suporte de Hardware: Forneceu suporte técnico para desktops, notebooks. (Em andamento)">
+                    Hardware Support: Provided technical support for desktops, notebooks. <strong>(Ongoing)</strong>
+                </li>
+                <li class="translatable" 
+                    data-en="Built responsive websites using HTML, CSS, native JavaScript, and React, including data manipulation. (Ongoing)" 
+                    data-pt="Construção de sites responsivos utilizando HTML, CSS, JavaScript nativo e React, incluindo manipulação de dados. (Em andamento)">
+                    Built responsive websites using HTML, CSS, native JavaScript, and React, including data manipulation. <strong>(Ongoing)</strong>
+                </li>
+                
+                </ul>
+                <p>
+            </article>
+
+         
+
+            
+</body>
